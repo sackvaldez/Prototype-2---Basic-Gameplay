@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
 
     // Update is called once per frame
     private float spawnPosZ = 20;
-    private float spawnRangeX = 20;
+    private float spawnRangeX = 10;
     void Update()
     {
         // if (Input.GetKeyDown(KeyCode.S)) // NO IN USE ANYMORE
