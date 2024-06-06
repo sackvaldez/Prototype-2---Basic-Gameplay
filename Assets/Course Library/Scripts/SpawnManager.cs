@@ -23,10 +23,12 @@ public class SpawnManager : MonoBehaviour
         //     SpawnRandomAnimal();
         // }
     }
+    // Specific Random Spawning Function using Spawn Variables
     void SpawnRandomAnimal()
     {
         Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
         int animalIndex = Random.Range(0, animalPrefabs.Length);
+        // We create an Animal from the animalIndex(which is random) in a random spawn position using the same rotation
         Instantiate(animalPrefabs[animalIndex], spawnPosition,
         animalPrefabs[animalIndex].transform.rotation);
     }
